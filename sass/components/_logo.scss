@@ -1,0 +1,21 @@
+.logo {
+	cursor: pointer;
+}
+
+.logo--margin-bottom {
+	display: block;
+	margin-top: 0;
+	margin-bottom: 20px;
+}
+
+.logo__web {
+	@include logo($accent-color);
+}
+
+.logo__studio {
+	@include logo($logo-text-color);
+}
+
+.logo__studio--white-color {
+	color: $secondary-text-color;
+}

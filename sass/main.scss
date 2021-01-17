@@ -1,0 +1,20 @@
+@import './base/reset';
+@import './base/modern-normalize';
+
+@import './utils/variables';
+@import './utils/mixins';
+@import './utils/placeholders';
+
+@import './components/body';
+@import './components/container';
+@import './components/header';
+@import './components/logo';
+@import './components/hero';
+@import './components/preferences';
+@import './components/occupation';
+@import './components/social';
+@import './components/team';
+@import './components/customers';
+@import './components/portfolio';
+@import './components/footer';
+@import './components/modal';

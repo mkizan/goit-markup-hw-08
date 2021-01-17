@@ -1,0 +1,27 @@
+.social-pages--content-space-evenly {
+	@include box(flex, space-evenly, center);
+}
+
+.social-pages--content-space-between {
+	@include box(flex, space-between, center);
+}
+
+.social-pages__link {
+	@extend %social-icons;
+	color: $color-icon;
+
+	&:hover,
+	&:focus {
+		transform: scale(1.25);
+		background-color: $accent-color;
+		color: $secondary-text-color;
+	}
+}
+
+.social-pages__link--bg-transparent {
+	background-color: $footer-icon-bg-color;
+}
+
+.social-pages__icon {
+	fill: currentColor;
+}

@@ -1,0 +1,171 @@
+.footer {
+	padding-top: 60px;
+	padding-bottom: 60px;
+	background-color: $footer-bg-color;
+}
+
+.footer__wrapper {
+	display: flex;
+	align-items: baseline;
+}
+
+// .footer-wrapper a {
+// 	transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+// }
+
+/* ADDRESS - BLOCK */
+
+.address-block {
+	margin-right: 70px;
+}
+
+.address-block__address {
+	margin-top: 0;
+	margin-bottom: 9px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 1.71;
+	letter-spacing: 0.03em;
+	color: $secondary-text-color;
+}
+
+.address-block__email {
+	margin-bottom: 9px;
+}
+
+.address-block__contact-email {
+	transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+	font-style: normal;
+	font-weight: 500;
+	line-height: 1.14;
+	letter-spacing: 0.02em;
+	text-decoration: none;
+	color: $description-text-color;
+
+	&:focus,
+	&:hover {
+		color: $accent-color;
+		cursor: pointer;
+	}
+}
+
+.address-block__contact-phone {
+	margin-top: 0;
+	margin-bottom: 0;
+	transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+	font-style: normal;
+	font-weight: 500;
+	line-height: 1.14;
+	letter-spacing: 0.02em;
+	text-decoration: none;
+	color: $description-text-color;
+
+	&:focus,
+	&:hover {
+		color: $accent-color;
+		cursor: pointer;
+	}
+}
+
+/* SOCIAL - BLOCK */
+.social-block {
+	display: flex;
+	flex-direction: column;
+	margin-right: 93px;
+	width: 206px;
+	height: 80px;
+}
+
+.social-block__join {
+	margin-bottom: 20px;
+	font-style: normal;
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 1.14;
+	letter-spacing: 0.03em;
+	text-transform: uppercase;
+	color: $secondary-text-color;
+}
+
+// .social-list {
+// 	display: flex;
+// 	justify-content: space-between;
+// 	align-items: center;
+// }
+
+// .social-link {
+// 	@extend %social-icons;
+// 	background-color: rgba(255, 255, 255, 0.1);
+// 	color: $secondary-text-color;
+// }
+
+// .social-icon {
+// 	fill: currentColor;
+// }
+
+// .social-link:hover,
+// .social-link:focus {
+// 	background-color: $accent-color;
+// }
+
+/* MAILING - BLOCK */
+
+.mailing-block {
+	display: flex;
+}
+
+.form-mailing {
+	display: flex;
+	flex-direction: column;
+}
+
+.form-mailing__wrapper {
+	display: flex;
+	flex-direction: row;
+}
+
+.form-mailing__label {
+	margin-bottom: 20px;
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 1.14;
+	letter-spacing: 0.03em;
+	text-transform: uppercase;
+	color: $primary-bg-color;
+}
+
+.form-mailing input {
+	width: 358px;
+	margin-right: 12px;
+	padding: 15px 16px;
+	background-color: transparent;
+	border: 1px solid $description-text-color;
+	border-radius: 4px;
+	color: rgba(255, 255, 255, 0.6);
+}
+
+.form-mailing input::placeholder {
+	font-size: 16px;
+	line-height: 20px;
+	letter-spacing: 0.03em;
+	color: rgba(255, 255, 255, 0.6);
+}
+
+.form-mailing__button {
+	display: flex;
+	align-items: center;
+	padding: 10px 29px;
+	text-transform: capitalize;
+	border-radius: 4px;
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 1.87;
+	letter-spacing: 0.06em;
+	background-color: $accent-color;
+	color: $secondary-text-color;
+}
+
+.form-mailing__icon {
+	margin-left: 10px;
+	fill: currentColor;
+}
