@@ -36,6 +36,10 @@
 	text-transform: uppercase;
 	color: $secondary-text-color;
 
+	@media screen and (min-width: 480px) {
+		width: 360px;
+	}
+
 	@media screen and (min-width: 1200px) {
 		width: 696px;
 		font-size: 44px;
