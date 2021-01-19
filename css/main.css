@@ -623,8 +623,15 @@ img {
 }
 
 .occupation {
+  display: none;
   padding-bottom: 94px;
   text-align: center;
+}
+
+@media screen and (min-width: 1200px) {
+  .occupation {
+    display: block;
+  }
 }
 
 .occupation__title {
