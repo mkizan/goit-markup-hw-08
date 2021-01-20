@@ -2,21 +2,51 @@
 	padding-top: 60px;
 	padding-bottom: 60px;
 	background-color: $footer-bg-color;
+
+	& .container {
+		display: flex;
+		flex-direction: column;
+
+		@media screen and (min-width: 768px) {
+			flex-direction: row;
+			flex-wrap: wrap;
+			align-items: baseline;
+		}
+
+		@media screen and (min-width: 1200px) {
+			flex-direction: row;
+			justify-content: space-between;
+			flex-wrap: nowrap;
+			align-items: baseline;
+		}
+	}
 }
 
-.footer__wrapper {
-	display: flex;
-	align-items: baseline;
-}
-
-// .footer-wrapper a {
-// 	transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+// .footer__wrapper {
+// 	display: flex;
+// 	flex-direction: column;
+// 	align-items: center;
+// 	// align-items: baseline;
 // }
 
 /* ADDRESS - BLOCK */
 
 .address-block {
-	margin-right: 70px;
+	text-align: center;
+
+	@media screen and (min-width: 768px) {
+		display: flex;
+		flex-direction: column;
+		flex-wrap: wrap;
+		align-items: center;
+		width: 50%;
+	}
+
+	@media screen and (min-width: 1200px) {
+		// margin-right: 70px;
+		// width: 230px;
+		align-items: start;
+	}
 }
 
 .address-block__address {
@@ -30,10 +60,8 @@
 }
 
 .address-block__email {
+	display: block;
 	margin-bottom: 9px;
-}
-
-.address-block__contact-email {
 	transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 	font-style: normal;
 	font-weight: 500;
@@ -49,9 +77,10 @@
 	}
 }
 
-.address-block__contact-phone {
+.address-block__phone {
+	display: block;
 	margin-top: 0;
-	margin-bottom: 0;
+	margin-bottom: 60px;
 	transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 	font-style: normal;
 	font-weight: 500;
@@ -64,16 +93,31 @@
 	&:hover {
 		color: $accent-color;
 		cursor: pointer;
+	}
+
+	@media screen and (min-width: 1200px) {
+		margin-bottom: 0;
 	}
 }
 
 /* SOCIAL - BLOCK */
 .social-block {
-	display: flex;
-	flex-direction: column;
-	margin-right: 93px;
-	width: 206px;
-	height: 80px;
+	width: 100%;
+	text-align: center;
+
+	@media screen and (min-width: 768px) {
+		display: flex;
+		flex-direction: column;
+		flex-wrap: wrap;
+		align-items: center;
+		// justify-content: space-around;
+		width: 50%;
+	}
+
+	@media screen and (min-width: 1200px) {
+		flex-wrap: nowrap;
+		align-items: baseline;
+	}
 }
 
 .social-block__join {
@@ -87,61 +131,101 @@
 	color: $secondary-text-color;
 }
 
-// .social-list {
-// 	display: flex;
-// 	justify-content: space-between;
-// 	align-items: center;
-// }
+.social-accounts {
+	display: flex;
+	justify-content: center;
+	margin-bottom: 60px;
 
-// .social-link {
-// 	@extend %social-icons;
-// 	background-color: rgba(255, 255, 255, 0.1);
-// 	color: $secondary-text-color;
-// }
+	& li {
+		margin-right: 10px;
+	}
 
-// .social-icon {
-// 	fill: currentColor;
-// }
+	@media screen and (min-width: 1200px) {
+		margin-bottom: 0;
+	}
+}
 
-// .social-link:hover,
-// .social-link:focus {
-// 	background-color: $accent-color;
-// }
+.social-accounts__link {
+	@extend %social-icons;
+	color: $color-icon;
+
+	&:hover,
+	&:focus {
+		transform: scale(1.25);
+		background-color: $accent-color;
+		color: $secondary-text-color;
+	}
+}
+
+.social-accounts__icon {
+	fill: currentColor;
+}
 
 /* MAILING - BLOCK */
 
 .mailing-block {
 	display: flex;
+
+	@media screen and (min-width: 768px) {
+		width: 100%;
+	}
+
+	@media screen and (min-width: 1200px) {
+		justify-content: space-between;
+		width: auto;
+	}
 }
 
 .form-mailing {
 	display: flex;
 	flex-direction: column;
+	width: 100%;
 }
 
 .form-mailing__wrapper {
 	display: flex;
-	flex-direction: row;
+	flex-direction: column;
+	align-items: center;
+
+	@media screen and (min-width: 1200px) {
+		flex-direction: row;
+		align-items: flex-start;
+	}
 }
 
 .form-mailing__label {
+	display: block;
 	margin-bottom: 20px;
 	font-weight: 700;
 	font-size: 14px;
 	line-height: 1.14;
 	letter-spacing: 0.03em;
+	text-align: center;
 	text-transform: uppercase;
 	color: $primary-bg-color;
+
+	@media screen and (min-width: 1200px) {
+		display: flex;
+	}
 }
 
 .form-mailing input {
-	width: 358px;
-	margin-right: 12px;
+	width: 100%;
+	margin-bottom: 20px;
 	padding: 15px 16px;
 	background-color: transparent;
 	border: 1px solid $description-text-color;
 	border-radius: 4px;
 	color: rgba(255, 255, 255, 0.6);
+
+	@media screen and (min-width: 768px) {
+		width: 450px;
+	}
+
+	@media screen and (min-width: 1200px) {
+		width: 358px;
+		margin-right: 12px;
+	}
 }
 
 .form-mailing input::placeholder {
