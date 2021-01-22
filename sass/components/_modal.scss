@@ -29,6 +29,13 @@
 	background-color: $primary-bg-color;
 
 	transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+	@media screen and (max-width: 478px) {
+		top: 50%;
+		left: 49%;
+		width: 96%;
+		transform: translate(-49%, -50%) scale(1);
+	}
 }
 
 .modal__description {
@@ -36,7 +43,7 @@
 	font-style: normal;
 	font-weight: 700;
 	font-size: 20px;
-	line-height: 1.15;
+	line-height: 1.5;
 	text-align: center;
 	letter-spacing: 0.03em;
 	color: $primary-text-color;
@@ -98,6 +105,10 @@
 	border: 1px solid $color-icon;
 	border-radius: 4px;
 	resize: none;
+
+	@media screen and (max-width: 767px) {
+		margin-bottom: 10px;
+	}
 }
 
 .form-modal__textarea::placeholder {
@@ -120,6 +131,10 @@
 	justify-content: center;
 	align-items: center;
 	margin-bottom: 40px;
+
+	@media screen and (max-width: 767px) {
+		margin-bottom: 20px;
+	}
 }
 
 .form-modal__agree {
@@ -138,6 +153,10 @@
 		height: 15px;
 		border: 2px solid $primary-text-color;
 		border-radius: 2px;
+	}
+
+	@media screen and (max-width: 1200px) {
+		font-size: 12px;
 	}
 }
 
